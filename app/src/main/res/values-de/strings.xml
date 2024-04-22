@@ -1,0 +1,61 @@
+<resources>
+    <string name="link_to_website">Link zur Website</string>
+
+    <string-array name="titles">
+        <item>Schwarznasenhai</item>
+        <item>Schwarzspitzen-Riffhai</item>
+        <item>Schwarzspitzenhai</item>
+        <item>Blauer Hai</item>
+        <item>Brauner Shyshark</item>
+        <item>Bullenhai</item>
+        <item>Karibischer Riffhai</item>
+        <item>Walhai aus Bronze</item>
+        <item>Dunkler Hai</item>
+        <item>Galapagos-Hai</item>
+        <item>Großer Hammerhai</item>
+        <item>Grauer Riffhai</item>
+        <item>Zitronenhai</item>
+        <item>Leopardenhai</item>
+        <item>Ozeanischer Weißspitzenhai</item>
+        <item>Pazifischer Spitznasenhai</item>
+        <item>Pyjamahai</item>
+        <item>Sandtigerhai</item>
+        <item>Gebogener Hammerhai</item>
+        <item>Scharfzahniger Zitronenhai</item>
+        <item>Seidenhai</item>
+        <item>Silberspitzenhai</item>
+        <item>Glatter Hammerhai</item>
+        <item>Smoothhound</item>
+        <item>Spinnerhai</item>
+        <item>Tigerhai</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Dieser Hai ist leicht an der dunklen Spitze seiner Schnauze zu erkennen. Kein Interdorsalkamm, aber kleine Brustflossen, Rückenflossen mit kurzen hinteren Spitzen: Die erste ist klein und die zweite mäßig groß.</item>
+        <item>Ein mittelgroßer, stämmiger, bräunlich-grauer Hai mit einer kurzen, stumpf gerundeten Schnauze; Schwarz und Weiß an den Spitzen der ersten Rückenflosse und am unteren Schwanzflossenlappen.</item>
+        <item>Alle Flossen mit Ausnahme der Afterflossen haben eine schwarze Spitze und der Hai hat einen Rückenrücken.</item>
+        <item>Dieser Hai ist BLAU und einer der schönsten Haie. Es handelt sich um einen schlanken, anmutigen Hai mit einer langen, konischen Schnauze, großen Augen (ohne Stigmen) und langen, schmalen, sichelförmigen Brustflossen weit vor dem ersten Rückenflügel ohne Interdorsalleiste. Ausgewachsene Weibchen tragen häufig Bisswunden (Paarungsnarben).</item>
+        <item>Ein kleiner, stämmiger Hai mit breitem Kopf und sehr großen Nasenlöchern. Seine stark erweiterten vorderen Nasenlappen reichen bis zum Maul und die Kiemenschlitze befinden sich auf der Oberseite seines Körpers.</item>
+        <item>Ein stämmiger, schwerer Grauhai mit einer kurzen, stumpf abgerundeten Schnauze.</item>
+        <item>Ein großer Hai mit einer kurzen, stumpf abgerundeten Schnauze, einem Rückenkamm und ohne markante Markierungen auf den Flossen.</item>
+        <item>Ein großer Hai mit einer langen, mäßig abgerundeten, breiten Schnauze und einer Ausbuchtung an der Basis der oberen Schwanzflosse.</item>
+        <item>Ein großer Grauhai mit einer kurzen, breit gerundeten Schnauze, ohne Markierungen auf den Flossen und einem Rückenkamm.</item>
+        <item>Ein großer, ziemlich schlanker Grauhai mit einer mäßig breiten, abgerundeten Schnauze. Der Hai hat keine auffälligen Markierungen auf seinen Flossen. Diese Art ähnelt dem Schwarzen Hai, hat jedoch eine höhere Rückenflosse und einen niedrigen Rückenrücken.</item>
+        <item>Hammerförmiger Kopf mit nahezu geradem Vorderrand. Die erste Rückenflosse ist sehr hoch und sichelförmig.</item>
+        <item>Ein mittelgroßer bis großer Hai mit einer mäßig langen, breit gerundeten Schnauze und einer schwarz umrandeten Schwanzflosse.</item>
+        <item>Ein großer, stämmiger, gelblicher Kurznasenhai. Seine Rückenflossen sind etwa gleich groß.</item>
+        <item>Ein einzigartiges Muster aus markanten schwarzen Sattelspuren. Bei Erwachsenen werden die Sattelspuren hellzentriert.</item>
+        <item>Ein großer Hai mit großen, abgerundeten Flossen mit weißer Spitze. Der Hai hat eine hohe, abgerundete erste Rückenflosse und sehr lange paddelförmige Brustflossen.</item>
+        <item>Dies ist ein sehr kleiner Hai mit unauffälligen dunklen Flossenrändern. Es hat eine lange Schnauze, schnaubende Lippenfurchen, kleine, weit auseinander liegende Nasenlöcher, keine Atemlöcher, große Augen und sein zweiter dorsaler Ursprung beginnt weit hinter dem analen Ursprung.</item>
+        <item>Ein kleiner Hai mit einer unverkennbaren Kombination auffälliger Längsstreifen, aber ohne Flecken. Es hat markante, aber kurze Nasenbarten und Rückenflossen (die zweite ist viel kleiner), die sehr weit hinten am Körper angebracht sind.</item>
+        <item>In Afrika auch als Raggedtooth Shark und in Australien als Grey Ammenhai bekannt. Ein stämmiger Hai mit hervorstehenden Zähnen. Der Hai hat einen ausgeprägten Buckel auf dem Rücken und beide Rückenflossen sind etwa gleich groß.</item>
+        <item>Ein Hammerhai mit großem Körper und einem breit gewölbten Kopf mit schmaler Klinge, einer zentralen Kerbe und zwei kleineren seitlichen Vertiefungen.</item>
+        <item>Ein großer, gedrungener Hai mit einer breiten, stumpfen Schnauze und beiden Rückenflossen, die etwa gleich groß sind.</item>
+        <item>Ein großer, schlanker Meereshai mit einer mäßig langen, abgerundeten Schnauze und einem Rückenkamm.</item>
+        <item>Ein großer Hai mit auffälligen weißen Spitzen und Hinterkanten an allen Flossen.</item>
+        <item>Ein großer Hammerhai ohne Kerbe in der Mitte seines gebogenen Kopfes.</item>
+        <item>Ein großer, ziemlich schlanker Hai mit einem kurzen Kopf und einer kurzen Schnauze, einem breiten Innenteil, großen, eng beieinander stehenden Augen und einer oberen Schamlippe, die etwas länger gefurcht ist als die untere. Der Hai hat unbefranste Rückenflossen und einen halbfalzförmigen ventralen Schwanzlappen.</item>
+        <item>Ein langer und schlanker Hai mit einer sehr spitzen Schnauze. Die Brust-, After- und unteren Schwanzflossen haben normalerweise schwarze Spitzen. Ähnelt im Aussehen einem Schwarzspitzenhai – Carcharhinus limbatus, der eine etwas größere erste Rückenflosse mit einer sichelförmigen Hinterkante hat, und die Afterflosse eines Schwarzspitzenhais hat keine schwarze Spitze.</item>
+        <item>Ein großer Hai mit einer extrem breiten, stumpfen Schnauze und einem Schwanzkiel.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name" translatable="false">Shark List</string>
+    <string name="item_image" translatable="false">item_image</string>
+    <string name="title" translatable="false">title</string>
+    <string name="link_to_website">Link to website</string>
+
+    <string-array name="titles">
+        <item>Blacknose shark</item>
+        <item>Blacktip reef shark</item>
+        <item>Blacktip Shark</item>
+        <item>Blue shark</item>
+        <item>Brown Shyshark</item>
+        <item>Bull Shark</item>
+        <item>Caribbean Reef Shark</item>
+        <item>Bronze whaler shark</item>
+        <item>Dusky shark</item>
+        <item>Galapagos shark</item>
+        <item>Great hammerhead shark</item>
+        <item>Grey reef shark</item>
+        <item>Lemon shark</item>
+        <item>Leopard shark</item>
+        <item>Oceanic whitetip shark</item>
+        <item>Pacific sharpnose shark</item>
+        <item>Pyjama shark</item>
+        <item>Sand tiger shark</item>
+        <item>Scalloped hammerhead shark</item>
+        <item>Sharptooth lemon shark</item>
+        <item>Silky shark</item>
+        <item>Silvertip shark</item>
+        <item>Smooth hammerhead</item>
+        <item>Smoothhound</item>
+        <item>Spinner shark</item>
+        <item>Tiger shark</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>This shark is easily identifiable by the dark tip on its snout. No interdorsal ridge, but it has small pectoral fins, dorsal fins with short rear tips: the first is small, and the second is moderately large.</item>
+        <item>A moderate-sized stocky brownish gray shark with a short, bluntly rounded snout; black and white on tips of first dorsal fin and lower caudal fin lobe. </item>
+        <item>All fins except anal fins are black tipped, and the shark has an interdorsal ridge.</item>
+        <item>This shark is BLUE, and it is one of the most beautiful sharks. It is a slim, graceful shark with a long, conical snout, large eyes (no spiracles), and long, narrow scythe-shaped pectoral fins well in front of the first dorsal win with no interdorsal ridge. Mature females often bear bite wounds (mating scars).</item>
+        <item>A small stocky shark with a broad head, and very large nostrils. Its greatly expanded anterior nasal flaps reach its mouth, and its gill slits are on the upper sides of its body.</item>
+        <item>A stocky heavy-bodied gray shark with a short bluntly-rounded snout.</item>
+        <item>A large shark with a short bluntly-rounded snout, an interdorsal ridge, and no prominent markings on its fins.</item>
+        <item>A large shark with a long moderately rounded broad snout, and a bulge at the base of the upper caudal fin.</item>
+        <item>A large gray shark with a short broadly rounded snout, no markings on its fins, and it has an interdorsal ridge.</item>
+        <item>A large fairly slender gray shark with a moderately broad rounded snout. The shark has no conspicuous markings on its fins. This species resembles the dusky shark, but it has a taller dorsal fin and a low interdorsal ridge.</item>
+        <item>Hammer-shaped head with a nearly straight anterior margin. The first dorsal fin is very tall and falcate.</item>
+        <item>A medium-sized to large shark with a moderately long, broadly rounded snout and a black-edged caudal fin.</item>
+        <item>A big stocky short-nosed yellowish shark. Its dorsal fins are about the same size.</item>
+        <item>A unique pattern of striking black saddle marks. The saddle-marks become light-centered in adults.</item>
+        <item>A large shark with large rounded white-tipped fins. The shark has a high rounded first dorsal fin and very long paddle-shaped pectoral fins.</item>
+        <item>This is a very small shark with inconspicuous dusky fin edges. It has a long snout, snort labial furrows, small wide-spaced nostrils, no spiracles, large eyes, and its second dorsal origin starts far behind the anal origin.</item>
+        <item>A small shark with unmistakable combination of striking longitudinal stripes, but no spots. It has prominent but short nasal barbels and dorsal fins (second one being much smaller), which are set very far back on their body.</item>
+        <item>Also known as the Raggedtooth Shark in Africa and the Grey Nurse Shark in Australia. A stocky shark with protruding snaggle teeth. The shark has a pronounced hump to its back and both dorsal fins are about the same size.</item>
+        <item>A hammerhead shark with a large body and a broadly arched, narrow-bladed head with a central notch and two smaller lateral indentations.</item>
+        <item>A big, stocky shark with a broad, blunt snout, and both its dorsal fins are about the same size.</item>
+        <item>A large slim oceanic shark with a moderately long rounded snout and an interdorsal ridge.</item>
+        <item>A large shark with striking white tips and trailing edges on all fins.</item>
+        <item>A large hammerhead without a notch at the center of its curved head.</item>
+        <item>A large, fairly slender shark with a short head and snout, broad internarial, large close-set eyes, and an upper labial that furrows slightly longer than their lowers. The shark has unfringed dorsal fins, and a semifalcate ventral caudal lobe.</item>
+        <item>A long and slender shark with a very pointed snout. The pectoral, anal and lower caudal fins usually have black tips. Similar in appearance to a Blacktip shark - Carcharhinus limbatus which has a somewhat larger first dorsal fin with a falcate trailing edge, and the anal fin of a Blacktip shark does not have a black tip.</item>
+        <item>A large shark with an extremely wide, blunt snout and a caudal keel.</item>
+    </string-array>
+
+    <string name="link" translatable="false">https://www.sharks.org/species</string>
+    <string name="share">Share</string>
+</resources>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="link_to_website">Poveznica na stranicu</string>
+
+    <string-array name="titles">
+        <item>Crnonosi morski pas</item>
+        <item>Morski pas crnog grebena</item>
+        <item>Morski pas crni vrh</item>
+        <item>Plavi morski pas</item>
+        <item>Smeđi shyshark</item>
+        <item>Morski pas bik</item>
+        <item>Karipski grebenski morski pas</item>
+        <item>Brončani morski pas kitolovac</item>
+        <item>Mračni morski pas</item>
+        <item>morski pas s Galapagosa</item>
+        <item>Veliki morski pas čekićar</item>
+        <item>Sivi grebenski morski pas</item>
+        <item>Limun morski pas</item>
+        <item>morski pas leopard</item>
+        <item>Oceanski bijeli morski pas</item>
+        <item>Pacifički oštronosi morski pas</item>
+        <item>Pidžama morski pas</item>
+        <item>Pješčani tigar morski pas</item>
+        <item>Morski pas čekićar</item>
+        <item>Oštrozubi limunski morski pas</item>
+        <item>Svilenkasti morski pas</item>
+        <item>Srebrni morski pas</item>
+        <item>Glatka glava čekića</item>
+        <item>Glatki pas</item>
+        <item>Morski pas vrtača</item>
+        <item>Tigar morski pas</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Ovog morskog psa lako je prepoznati po tamnom vrhu na njušci. Nema interdorzalnog grebena, ali ima male prsne peraje, leđne peraje s kratkim stražnjim vrhovima: prva je mala, a druga je umjereno velika.</item>
+        <item>Zdepasti smeđe sivi morski pas srednje veličine s kratkom, tupo zaobljenom njuškom; crno-bijelo na vrhovima prve leđne peraje i donjeg režnja repne peraje. </item>
+        <item>Sve peraje osim analnih imaju crne vrhove, a morski pas ima interdorzalni greben.</item>
+        <item>Ovaj morski pas je PLAVI i jedan je od najljepših morskih pasa. To je tanak, graciozan morski pas s dugom, stožastom njuškom, velikim očima (bez spirala) i dugim, uskim prsnim perajama u obliku kose daleko ispred prve leđne izbočine bez interdorzalnog grebena. Zrele ženke često imaju rane od ugriza (ožiljke parenja).</item>
+        <item>Mali zdepasti morski pas sa širokom glavom i vrlo velikim nosnicama. Njegovi jako rašireni prednji nosni zalisci sežu do usta, a škržni prorezi nalaze se na gornjim stranama tijela.</item>
+        <item>Zdepasti sivi morski pas teškog tijela s kratkom, tupo zaobljenom njuškom.</item>
+        <item>Veliki morski pas s kratkom, tupo zaobljenom njuškom, interdorzalnim grebenom i bez istaknutih oznaka na perajama.</item>
+        <item>Veliki morski pas s dugom umjereno zaobljenom širokom njuškom i ispupčenjem na dnu gornje repne peraje.</item>
+        <item>Veliki sivi morski pas s kratkom široko zaobljenom njuškom, bez oznaka na perajama i ima interdorzalni greben.</item>
+        <item>Veliki prilično vitak sivi morski pas s umjereno širokom zaobljenom njuškom. Morski pas nema uočljive oznake na perajama. Ova vrsta podsjeća na tamnog morskog psa, ali ima višu leđnu peraju i nizak interdorzalni greben.</item>
+        <item>Glava u obliku čekića s gotovo ravnim prednjim rubom. Prva leđna peraja je vrlo visoka i falcata.</item>
+        <item>Srednji do veliki morski pas s umjereno dugom, široko zaobljenom njuškom i repnom perajom s crnim rubom.</item>
+        <item>Veliki zdepasti žućkasti morski pas kratkog nosa. Njegove leđne peraje su otprilike iste veličine.</item>
+        <item>Jedinstveni uzorak upečatljivih crnih tragova sedla. Oznake sedla postaju svijetle u središtu odraslih.</item>
+        <item>Veliki morski pas s velikim zaobljenim perajama s bijelim vrhovima. Morski pas ima visoku zaobljenu prvu leđnu peraju i vrlo dugačke prsne peraje u obliku vesla.</item>
+        <item>Ovo je vrlo mali morski pas s neupadljivim tamnim rubovima peraja. Ima dugu njušku, labijalne brazde za frktanje, male široko razmaknute nosnice, nema dišnice, velike oči, a njegovo drugo dorzalno podrijetlo počinje daleko iza analnog podrijetla.</item>
+        <item>Mali morski pas s nepogrešivom kombinacijom upečatljivih uzdužnih pruga, ali bez mrlja. Ima istaknute, ali kratke nosne mrene i leđne peraje (druga je puno manja), koje su smještene vrlo daleko unatrag na tijelu.</item>
+        <item>Također poznat kao Raggedtooth Shark u Africi i Grey Nurse Shark u Australiji. Zdepasti morski pas s izbočenim zubima za hvatanje. Morski pas ima izraženu grbu na leđima, a obje leđne peraje približno su iste veličine.</item>
+        <item>Morski pas čekićar s velikim tijelom i široko zasvođenom glavom uskih oštrica sa središnjim usjekom i dva manja bočna udubljenja.</item>
+        <item>Veliki, zdepasti morski pas sa širokom, tupom njuškom, a obje leđne peraje su mu otprilike iste veličine.</item>
+        <item>Veliki vitki oceanski morski pas s umjereno dugom zaobljenom njuškom i interdorzalnim grebenom.</item>
+        <item>Veliki morski pas s upečatljivim bijelim vrhovima i stražnjim rubovima na svim perajama.</item>
+        <item>Velika glava čekića bez ureza u sredini zakrivljene glave.</item>
+        <item>Veliki, prilično vitak morski pas s kratkom glavom i njuškom, širokim unutrašnjim, velikim blisko postavljenim očima i gornjim usnama koje su izbrazdane nešto duže od donjih. Morski pas ima leđne peraje bez resa i polufalkatni trbušni repni režanj.</item>
+        <item>Dugačak i vitak morski pas s vrlo šiljastom njuškom. Prsne, analne i donje repne peraje obično imaju crne vrhove. Izgledom sličan crnovrhom morskom psu - Carcharhinus limbatus koji ima nešto veću prvu leđnu peraju sa falcatnim stražnjim rubom, a analna peraja crnovrhog morskog psa nema crni vrh.</item>
+        <item>Veliki morski pas s iznimno širokom, tupom njuškom i repnom kobilicom.</item>
+    </string-array>
+</resources>
