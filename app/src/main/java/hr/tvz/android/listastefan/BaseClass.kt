@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 open class BaseClass: AppCompatActivity() {
@@ -24,6 +25,8 @@ open class BaseClass: AppCompatActivity() {
                         val broadcastIntent = Intent()
                         broadcastIntent.action = uniqueActionString
                         sendBroadcast(broadcastIntent)
+
+                        Toast.makeText(this, "Broadcast sent", Toast.LENGTH_SHORT).show()
                     }
                     .setNegativeButton("Cancel") { _, _ -> }
 

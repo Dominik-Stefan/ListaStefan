@@ -63,5 +63,5 @@
     </string-array>
 
     <string name="link" translatable="false">https://www.sharks.org/species</string>
-    <string name="share">Share</string>
+    <string name="share" translatable="false">Share</string>
 </resources>
