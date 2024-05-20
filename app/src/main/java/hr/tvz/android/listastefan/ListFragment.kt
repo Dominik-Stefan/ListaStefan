@@ -1,6 +1,7 @@
 package hr.tvz.android.listastefan
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -53,10 +54,14 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     override fun onItemClick(position: Int) {
         val item = dataList[position]
 
-        val intent = Intent(this.context, DetailedActivity::class.java)
-        intent.putExtra("shark", item)
-
-        startActivity(intent)
+        if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            val intent = Intent(this.context, DetailedActivity::class.java)
+            intent.putExtra("shark", item)
+            startActivity(intent)
+        } else {
+            val tmp = activity as MainActivity
+            tmp.change(item)
+        }
     }
 
     private fun getData() {

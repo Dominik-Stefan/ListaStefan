@@ -1,6 +1,7 @@
 package hr.tvz.android.listastefan
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +13,10 @@ class DetailedActivity : BaseClass() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed)
+
+        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            finish()
+        }
 
         val shark = intent.getParcelableExtra("shark", DataClass::class.java)
         if(shark != null){

@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
 
@@ -17,10 +18,31 @@ class MainActivity : BaseClass() {
         val batteryReceiver = BatteryReceiver()
         registerReceiver(batteryReceiver, filter)
 
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.main, ListFragment())
-            .commit()
+        val fragmentManager = supportFragmentManager.beginTransaction()
+
+        if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            fragmentManager.replace(R.id.main, ListFragment())
+
+            val detailFragment = supportFragmentManager.findFragmentByTag("detail") as DetailFragment?
+            if (detailFragment != null) {
+                fragmentManager
+                    .remove(detailFragment)
+                    .commit()
+            } else {
+                fragmentManager.commit()
+            }
+        } else {
+            fragmentManager
+                .replace(R.id.main, ListFragment())
+                .replace(R.id.detail_frame, DetailFragment(), "detail")
+                .commit()
+        }
+    }
+
+    fun change(item : DataClass) {
+        val detailFragment = supportFragmentManager.findFragmentByTag("detail") as DetailFragment
+
+        detailFragment.change(item.dataTitle, item.dataDescription, item.dataImage)
     }
 
     inner class BatteryReceiver: BroadcastReceiver() {
