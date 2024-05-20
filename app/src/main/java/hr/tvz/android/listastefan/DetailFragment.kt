@@ -25,6 +25,8 @@ class DetailFragment : Fragment() {
     ): View {
         val rootView : View = inflater.inflate(R.layout.fragment_detail, container, false)
 
+        shark = DataClass(R.mipmap.shark, "", "")
+
         title= rootView.findViewById(R.id.itemTitle)
         description = rootView.findViewById(R.id.itemDescription)
         itemImage = rootView.findViewById(R.id.itemImage)

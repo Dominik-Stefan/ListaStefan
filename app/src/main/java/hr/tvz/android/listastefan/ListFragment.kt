@@ -9,11 +9,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Room
+
 
 class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     private lateinit var recyclerView: RecyclerView
     private lateinit var dataList: ArrayList<DataClass>
 
+    /*
     private lateinit var titleList: Array<String>
     private lateinit var descriptionList: Array<String>
 
@@ -30,6 +33,12 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         R.drawable.smooth_hammerhead, R.drawable.smoothhound,
         R.drawable.spinner_shark, R.drawable.tiger_shark
     )
+     */
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,15 +47,26 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     ): View {
         val rootView : View = inflater.inflate(R.layout.fragment_list, container, false)
 
-        titleList = resources.getStringArray(R.array.titles)
-        descriptionList = resources.getStringArray(R.array.descriptions)
-
         recyclerView = rootView.findViewById(R.id.list)
         recyclerView.layoutManager = LinearLayoutManager(rootView.context)
         recyclerView.setHasFixedSize(true)
 
-        dataList = arrayListOf<DataClass>()
+        //titleList = resources.getStringArray(R.array.titles)
+        //descriptionList = resources.getStringArray(R.array.descriptions)
+
         getData()
+
+        /*
+        Thread {
+            val db = Room.databaseBuilder(
+                this.requireContext(),
+                AppDatabase::class.java, "shark-data"
+            ).build()
+
+            val dataDao = db.dataDao()
+            dataDao.insertAll(dataList)
+        }.start()
+         */
 
         return rootView
     }
@@ -65,10 +85,27 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     }
 
     private fun getData() {
+        /*
         for (i in imageList.indices) {
             val dataClass = DataClass(imageList[i], titleList[i], descriptionList[i])
             dataList.add(dataClass)
         }
-        recyclerView.adapter = AdapterClass(dataList, this)
+         */
+
+        Thread {
+            val db = Room.databaseBuilder(
+                this.requireContext(),
+                AppDatabase::class.java, "shark-data"
+            ).build()
+
+            val dataDao = db.dataDao()
+            dataList = dataDao.getAll() as ArrayList<DataClass>
+
+            recyclerView.post(kotlinx.coroutines.Runnable {
+                recyclerView.adapter = AdapterClass(dataList, this)
+            })
+        }.start()
+
+        //recyclerView.adapter = AdapterClass(dataList, this)
     }
 }

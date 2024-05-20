@@ -2,8 +2,12 @@ package hr.tvz.android.listastefan
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-data class DataClass(var dataImage: Int, var dataTitle: String, var dataDescription: String) : Parcelable {
+@Entity
+data class DataClass(@PrimaryKey var dataImage: Int, @ColumnInfo var dataTitle: String, @ColumnInfo var dataDescription: String) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
