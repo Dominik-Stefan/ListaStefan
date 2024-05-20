@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587771711318",
+    "project_id": "lv3-fragments-notifications",
+    "storage_bucket": "lv3-fragments-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587771711318:android:8837a07c9ea5ab797f90f7",
+        "android_client_info": {
+          "package_name": "hr.tvz.android.listastefan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfkGykGPtA4hbYA7SpaRb1WruoeyzzbBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
