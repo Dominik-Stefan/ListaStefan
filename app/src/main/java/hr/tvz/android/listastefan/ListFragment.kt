@@ -16,7 +16,6 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     private lateinit var recyclerView: RecyclerView
     private lateinit var dataList: ArrayList<DataClass>
 
-    /*
     private lateinit var titleList: Array<String>
     private lateinit var descriptionList: Array<String>
 
@@ -33,7 +32,6 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         R.drawable.smooth_hammerhead, R.drawable.smoothhound,
         R.drawable.spinner_shark, R.drawable.tiger_shark
     )
-     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,8 +49,10 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         recyclerView.layoutManager = LinearLayoutManager(rootView.context)
         recyclerView.setHasFixedSize(true)
 
-        //titleList = resources.getStringArray(R.array.titles)
-        //descriptionList = resources.getStringArray(R.array.descriptions)
+        titleList = resources.getStringArray(R.array.titles)
+        descriptionList = resources.getStringArray(R.array.descriptions)
+
+        dataList = ArrayList()
 
         getData()
 
@@ -85,13 +85,12 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     }
 
     private fun getData() {
-        /*
         for (i in imageList.indices) {
             val dataClass = DataClass(imageList[i], titleList[i], descriptionList[i])
             dataList.add(dataClass)
         }
-         */
 
+        /*
         Thread {
             val db = Room.databaseBuilder(
                 this.requireContext(),
@@ -105,7 +104,8 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
                 recyclerView.adapter = AdapterClass(dataList, this)
             })
         }.start()
+         */
 
-        //recyclerView.adapter = AdapterClass(dataList, this)
+        recyclerView.adapter = AdapterClass(dataList, this)
     }
 }

@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.res.Configuration
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -14,6 +15,8 @@ import com.google.firebase.messaging.FirebaseMessaging
 
 class MainActivity : BaseClass() {
 
+    private lateinit var mediaPlayer: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +24,12 @@ class MainActivity : BaseClass() {
         val filter = IntentFilter(Intent.ACTION_BATTERY_LOW)
         val batteryReceiver = BatteryReceiver()
         registerReceiver(batteryReceiver, filter)
+
+        mediaPlayer = MediaPlayer.create(applicationContext, R.raw.jaws_x)
+
+        mediaPlayer.isLooping = true
+
+        mediaPlayer.start()
 
         val fragmentManager = supportFragmentManager.beginTransaction()
 
