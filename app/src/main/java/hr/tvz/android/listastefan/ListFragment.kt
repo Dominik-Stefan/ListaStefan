@@ -3,19 +3,25 @@ package hr.tvz.android.listastefan
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Room
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     private lateinit var recyclerView: RecyclerView
     private lateinit var dataList: ArrayList<DataClass>
 
+    /*
     private lateinit var titleList: Array<String>
     private lateinit var descriptionList: Array<String>
 
@@ -33,6 +39,8 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         R.drawable.spinner_shark, R.drawable.tiger_shark
     )
 
+     */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -49,8 +57,8 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         recyclerView.layoutManager = LinearLayoutManager(rootView.context)
         recyclerView.setHasFixedSize(true)
 
-        titleList = resources.getStringArray(R.array.titles)
-        descriptionList = resources.getStringArray(R.array.descriptions)
+        //titleList = resources.getStringArray(R.array.titles)
+        //descriptionList = resources.getStringArray(R.array.descriptions)
 
         dataList = ArrayList()
 
@@ -85,10 +93,13 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
     }
 
     private fun getData() {
+        /*
         for (i in imageList.indices) {
             val dataClass = DataClass(imageList[i], titleList[i], descriptionList[i])
             dataList.add(dataClass)
         }
+
+         */
 
         /*
         Thread {
@@ -106,6 +117,40 @@ class ListFragment : Fragment(), AdapterClass.RecyclerViewEvent {
         }.start()
          */
 
-        recyclerView.adapter = AdapterClass(dataList, this)
+        Thread {
+            val retrofit = Retrofit.Builder()
+                .baseUrl("http://10.0.2.2:8080/api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+
+            val service: ServerDataTransfer = retrofit.create(ServerDataTransfer::class.java)
+
+            val sharks = service.getSharks()
+
+            sharks.enqueue(object : Callback<MutableList<DataClass>> {
+                override fun onResponse(
+                    call: Call<MutableList<DataClass>>,
+                    response: Response<MutableList<DataClass>>
+                ) {
+                    if(response.isSuccessful) {
+                        val sharkList = response.body()!!
+
+                        for (shark in sharkList) {
+                            dataList.add(shark)
+                        }
+                    }
+                }
+                override fun onFailure(p0: Call<MutableList<DataClass>>, p1: Throwable) {
+                    Log.d("error","error")
+                    return
+                }
+            })
+
+            recyclerView.post(kotlinx.coroutines.Runnable {
+                recyclerView.adapter = AdapterClass(dataList, this)
+            })
+        }.start()
+
+        //recyclerView.adapter = AdapterClass(dataList, this)
     }
 }
